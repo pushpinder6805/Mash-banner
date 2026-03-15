@@ -1,10 +1,11 @@
 .homepage-search-banner {
-  background-image: url("/uploads/default/original/1X/YOUR_IMAGE.png");
+  background-image: url($b2f0025fdd5fb7f6cb262d32acd4c57e571188ea);
   background-size: cover;
   background-position: center;
   border-radius: 16px;
   padding: 60px 40px;
   margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .banner-inner {
@@ -16,6 +17,8 @@
   font-weight: 700;
   color: #123a74;
   margin-bottom: 30px;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+  line-height: 1.2;
 }
 
 .banner-actions {
@@ -31,13 +34,43 @@
   padding: 14px 40px;
   border-radius: 12px;
   font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(18, 58, 116, 0.2);
+
+  &:hover {
+    background: #0f2d5c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(18, 58, 116, 0.3);
+  }
 }
 
 .banner-or {
   font-size: 16px;
-  color: #333;
+  color: #123a74;
+  font-weight: 500;
 }
 
 .banner-search {
   width: 320px;
+}
+
+@media (max-width: 768px) {
+  .homepage-search-banner {
+    padding: 40px 20px;
+    border-radius: 12px;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .banner-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .banner-search {
+    width: 100%;
+    max-width: 320px;
+  }
 }
