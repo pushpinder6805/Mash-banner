@@ -21,6 +21,10 @@
   text-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
   line-height: 1.2;
 }
+.search-menu .search-input, .search-menu-container .search-input {
+    border: 0px !important;
+    border-radius: 16px !important;
+}
 
 .banner-actions {
   display: flex;
