@@ -1,0 +1,43 @@
+.homepage-search-banner {
+  background-image: url("/uploads/default/original/1X/YOUR_IMAGE.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 60px 40px;
+  margin-bottom: 30px;
+}
+
+.banner-inner {
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #123a74;
+  margin-bottom: 30px;
+}
+
+.banner-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.ask-question-btn {
+  background: #123a74;
+  color: #fff;
+  padding: 14px 40px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.banner-or {
+  font-size: 16px;
+  color: #333;
+}
+
+.banner-search {
+  width: 320px;
+}
