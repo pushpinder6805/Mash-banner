@@ -1,0 +1,10 @@
+{
+  "name": "discourse-cms-component",
+  "about_url": null,
+  "license_url": null,
+  "authors": null,
+  "theme_version": "1.0.0",
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "component": true
+}
