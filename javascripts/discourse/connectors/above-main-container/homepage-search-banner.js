@@ -1,11 +1,11 @@
-import { inject as service } from "@ember/service";
+import { service } from "@ember/service";
 
 export default {
   setupComponent(args, component) {
-    this.router = service("router");
+    const router = this.container.lookup("service:router");
 
     const updateBannerVisibility = () => {
-      const currentRoute = this.router.currentRouteName;
+      const currentRoute = router.currentRouteName;
       const isHomepage = currentRoute === "discovery.latest" ||
                          currentRoute === "discovery.categories" ||
                          currentRoute === "discovery.top";
@@ -14,12 +14,15 @@ export default {
 
     updateBannerVisibility();
 
-    this.router.on("routeDidChange", updateBannerVisibility);
+    component.set("_routeHandler", updateBannerVisibility);
+    router.on("routeDidChange", updateBannerVisibility);
   },
 
-  teardownComponent() {
-    if (this.router) {
-      this.router.off("routeDidChange");
+  teardownComponent(args, component) {
+    const router = this.container.lookup("service:router");
+    const handler = component.get("_routeHandler");
+    if (router && handler) {
+      router.off("routeDidChange", handler);
     }
   }
 };
