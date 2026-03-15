@@ -1,8 +1,8 @@
-import { service } from "@ember/service";
+import { getOwner } from "@ember/application";
 
 export default {
   setupComponent(args, component) {
-    const router = this.container.lookup("service:router");
+    const router = getOwner(component).lookup("service:router");
 
     const updateBannerVisibility = () => {
       const currentRoute = router.currentRouteName;
@@ -19,7 +19,7 @@ export default {
   },
 
   teardownComponent(args, component) {
-    const router = this.container.lookup("service:router");
+    const router = getOwner(component).lookup("service:router");
     const handler = component.get("_routeHandler");
     if (router && handler) {
       router.off("routeDidChange", handler);
