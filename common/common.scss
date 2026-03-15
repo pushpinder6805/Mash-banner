@@ -1,4 +1,4 @@
-.homepage-search-banner {
+.above-main-container-outlet.homepage-search-banner {
   background-image: url($background.png);
   background-size: cover;
   background-position: center;
@@ -55,7 +55,7 @@
 }
 
 @media (max-width: 768px) {
-  .homepage-search-banner {
+  .above-main-container-outlet.homepage-search-banner {
     padding: 40px 20px;
     border-radius: 12px;
   }
