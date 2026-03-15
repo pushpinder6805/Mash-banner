@@ -1,8 +1,16 @@
 import { service } from "@ember/service";
 
 export default {
+  router: service(),
+
   setupComponent(args, component) {
-    const router = this.router || component.router;
+    const router = this.router;
+
+    if (!router) {
+      component.set("showBanner", false);
+      return;
+    }
+
     const route = router.currentRouteName;
 
     component.set("showBanner",
@@ -11,6 +19,4 @@ export default {
       route === "discovery.top"
     );
   },
-
-  router: service(),
 };
