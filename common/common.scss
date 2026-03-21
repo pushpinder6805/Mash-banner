@@ -27,12 +27,12 @@
   transition: none;
 }
 .banner-search .search-term__input {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 20px;
-  color: #666;
-  padding-left: 10px;
+    font-family: Arial;
+    outline: none;
+    font-size: 20px;
+    color: #666;
+    font-weight: 400;
+    padding-left: 10px;
 }
 
 .banner-search .search-input:focus-within {
