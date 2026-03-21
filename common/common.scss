@@ -1,3 +1,11 @@
+.banner-search .search-input::before {
+  content: "\f002"; /* search icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: #0d2f6f;
+}
+
 /* Main container */
 .banner-search .search-input {
   background: #f2f2f2;
