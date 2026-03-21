@@ -1,4 +1,8 @@
-/* Ensure icon is visible and styled */
+.banner-search .search-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .banner-search .search-input .d-icon {
   color: #0d2f6f;
   font-size: 22px;
