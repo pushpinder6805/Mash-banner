@@ -5,51 +5,39 @@
   margin-right: 10px;
   color: #0d2f6f;
 }
-
-/* Main container */
 .banner-search .search-input {
   background: #f2f2f2;
   border: 2px solid #cfcfcf;
   border-radius: 40px;
-  height: 64px;
-
+  height: 48px;
   display: flex;
   align-items: center;
-
   padding: 0 20px;
   transition: none;
 }
-
-/* Input field */
 .banner-search .search-term__input {
   background: transparent;
   border: none;
   outline: none;
-
   font-size: 20px;
   color: #666;
-
   padding-left: 10px;
 }
 
-/* Remove blue hover/focus border */
 .banner-search .search-input:focus-within {
   border-color: #cfcfcf;
   box-shadow: none;
 }
 
-/* Hide right filter (sliders icon) */
 .banner-search .show-advanced-search {
   display: none !important;
 }
 
-/* Style left search icon */
 .banner-search .d-icon-search {
   color: #0d2f6f;
   font-size: 22px;
 }
 
-/* Ensure spacing like design */
 .banner-search .search-input-wrapper {
   max-width: 1114px;
   margin: 0 auto;
