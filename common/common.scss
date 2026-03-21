@@ -1,9 +1,8 @@
-.banner-search .search-input::before {
-  content: "\f002"; /* search icon */
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  margin-right: 10px;
+/* Ensure icon is visible and styled */
+.banner-search .search-input .d-icon {
   color: #0d2f6f;
+  font-size: 22px;
+  margin-right: 10px;
 }
 .banner-search .search-input {
   background: #f2f2f2;
