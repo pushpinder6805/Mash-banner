@@ -1,9 +1,10 @@
 .banner-search .search-input::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   display: inline-block;
-  background: url("data:image/svg+xml;utf8,<svg fill='%230d2f6f' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M10 2a8 8 0 105.29 14.29l4.7 4.7 1.41-1.41-4.7-4.7A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z'/></svg>") no-repeat center;
+  margin-right: 12px;
+  background: url('https://medicaidhub.org/uploads/default/original/1X/fbac6ed391e9c1c6111f24101fd8c6741bf7a12b.svg') no-repeat center;
   background-size: contain;
 }
 .banner-search .search-input {
